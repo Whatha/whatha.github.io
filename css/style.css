@@ -12,3 +12,16 @@ header .banner-text h3 {
    width: 70%;
    text-shadow: 0px 3px 4px rgba(0, 0, 0, .5);
 }
+
+#about{
+	  background: #161415 url(../images/about-me.png) no-repeat top center ;
+	  background-color: blue;
+}
+
+#about h2{
+	color: #3D1666;
+}
+
+#about p{
+	color: #60477D;
+}

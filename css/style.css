@@ -14,8 +14,9 @@ header .banner-text h3 {
 }
 
 #about{
-	  background: #161415 url(../images/about-me.png) no-repeat top center ;
-	  background-color: blue;
+	  background: #161415 url(../images/about-me.png) no-repeat bottom left ;
+	  background-color: black;
+	  background-size: 90%;
 }
 
 #about h2{

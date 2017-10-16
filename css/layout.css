@@ -131,7 +131,7 @@ header .scrolldown a:hover { color: #11ABB0; }
 
 /* nav-wrap */
 #nav-wrap {
-   font: 12px 'opensans-bold', sans-serif;
+  font:12px 'Roboto', sans-serif;
    width: 100%;
    text-transform: uppercase;
    letter-spacing: 2.5px;
@@ -141,7 +141,7 @@ header .scrolldown a:hover { color: #11ABB0; }
    left: 0;
    top: 0;
 }
-.opaque { background-color: #333; }
+.opaque { background-color: blue; }
 
 /* hide toggle button */
 #nav-wrap > a.mobile-btn { display: none; }
@@ -180,7 +180,7 @@ ul#nav li a {
 }
 
 ul#nav li a:active { background-color: transparent !important; }
-ul#nav li.current a { color: #652CB5; }
+ul#nav li.current a { color: blue; }
 
 
 /* ------------------------------------------------------------------ */

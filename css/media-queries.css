@@ -100,7 +100,7 @@
    /* mobile navigation
    -------------------------------------------------------------------- */
    #nav-wrap {
-      font: 12px 'opensans-bold', sans-serif;
+        font:12px 'Roboto', sans-serif;
       background: transparent !important;
       letter-spacing: 1.5px;  
       width: auto;
@@ -112,24 +112,24 @@
 	   width: 48px;
 		height: 48px;
 		text-align: left;
-		background-color: #CC5200;
+		background-color: white;
 		position: relative;
       border: none;
       float: right;
 
       font: 0/0 a;
       text-shadow: none;
-      color: transparent;
+      color: black;
 
       position: relative;
       top: 0px;
-      right: 30px;
+      right: 0px;
    }
 
 	#nav-wrap > a:before,
    #nav-wrap > a:after {
 	   position: absolute;
-		border: 2px solid #fff;
+		border: 2px solid #652CB5;
 		top: 35%;
 		left: 25%;
 		right: 25%;

@@ -21,20 +21,17 @@ header .banner-text h3 {
 }
 
 #about h2{
-	color: #3D1666;
+	color: #60477D;
 }
 
 #about p{
-	color: #60477D;
+	color: #4BDB7D;
 }
 .mobile-btn{
 	color: blue;
 }
 .opaque{
 	background-color: #4BDB7D;
-}
-.opaque{
-
 }
 ul#nav li.current a { color: #652CB5;
 font-weight: 500; }
@@ -46,4 +43,8 @@ font-weight: 500; }
       text-align: left;
       font-size: 30px;
       margin-left: 20px;
+}
+
+.contact-details{
+	text-align: right;
 }

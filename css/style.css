@@ -14,19 +14,6 @@ header .banner-text h3 {
    text-shadow: 0px 3px 4px rgba(0, 0, 0, .5);
 }
 
-#about{
-	  background: #161415 url(../images/about-me.png) no-repeat bottom left ;
-	  background-color: black;
-	  background-size: 90%;
-}
-
-#about h2{
-	color: #60477D;
-}
-
-#about p{
-	color: #4BDB7D;
-}
 .mobile-btn{
 	color: blue;
 }
@@ -47,4 +34,51 @@ font-weight: 500; }
 
 .contact-details{
 	text-align: right;
+}
+
+#portfolio {
+		   font-family: 'Roboto', sans-serif;
+   font-weight: 700; 
+   background: #ebeeee;
+   overflow: hidden;
+}
+#porfolio p{	
+	  font-family: 'Roboto', sans-serif;
+   font-weight: 300; 
+}
+
+section{
+		   font-family: 'Roboto', sans-serif;
+
+}
+#about{
+	margin: 0;
+	padding: 0;
+}
+#skills{
+	padding-top: 100px;
+}
+#about h2{
+	font-size: 70px;
+	  font-family: 'Roboto', sans-serif;
+   font-weight: 700; 
+   color:#4BDB7D;
+
+}
+#about h3{
+	font-size: 30px;
+	  font-family: 'Roboto', sans-serif;
+   font-weight: 300; 
+   color:#F2F2F2;
+   letter-spacing: 5px;
+   
+}
+#about p{
+	margin-top: 20px;
+		  font-family: 'Roboto', sans-serif;
+   font-weight: 300; 
+   color: white;
+}
+.timeline__content-title{
+	color:#4BDB7D;
 }

@@ -286,16 +286,11 @@ ul#nav li.current a { color: blue; }
 /*	Skill Bars
 /*----------------------------------------------*/
 
-.bars {
-	width: 95%;
-	float: left;
-	padding: 0;
-	text-align: left;
-}
-.bars .skills {
-  	margin-top: 36px;
-   list-style: none;
-}
+
+
+
+footer .social-links li:first-child { margin-left: 0; }
+
 .bars li {
    position: relative;
   	margin-bottom: 60px;

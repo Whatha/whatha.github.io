@@ -140,8 +140,10 @@ header .scrolldown a:hover { color: #11ABB0; }
    position: fixed;
    left: 0;
    top: 0;
+
 }
-.opaque { background-color: blue; }
+.opaque {
+  }
 
 /* hide toggle button */
 #nav-wrap > a.mobile-btn { display: none; }
@@ -850,7 +852,7 @@ call-to-action .button {
 #contact textarea:focus,
 #contact select:focus {
 	color: #fff;
-	background-color: #11ABB0;
+	background-color: #652CB5;
 }
 #contact button.submit {
 	text-transform: uppercase;

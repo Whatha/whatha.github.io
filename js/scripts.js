@@ -1,5 +1,27 @@
 $(document).ready(function(){
 
+    $('img[src$=".svg"]').each(function() {
+        var $img = jQuery(this);
+        var imgURL = $img.attr('src');
+        var attributes = $img.prop("attributes");
+
+        $.get(imgURL, function(data) {
+            // Get the SVG tag, ignore the rest
+            var $svg = jQuery(data).find('svg');
+
+            // Remove any invalid XML tags
+            $svg = $svg.removeAttr('xmlns:a');
+
+            // Loop through IMG attributes and apply on SVG
+            $.each(attributes, function() {
+                $svg.attr(this.name, this.value);
+            });
+
+            // Replace IMG with SVG
+            $img.replaceWith($svg);
+        }, 'xml');
+    });
+
    var $sm = 480;
    var $md = 768;
 
@@ -40,7 +62,7 @@ $(document).ready(function(){
       alert('NO HAY MÁS INFORMACIÓN');
    });
 });
-
+/*
 $(function() {
   $('a[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -55,7 +77,7 @@ $(function() {
     }
   });
 });
-
+*/
 (function($) {
   $.fn.timeline = function() {
     var selectors = {
@@ -91,27 +113,3 @@ $(function() {
   }
 })(jQuery);
 $("#timeline-1").timeline();
-
-$(document).ready(function() {
-    $('img[src$=".svg"]').each(function() {
-        var $img = jQuery(this);
-        var imgURL = $img.attr('src');
-        var attributes = $img.prop("attributes");
-
-        $.get(imgURL, function(data) {
-            // Get the SVG tag, ignore the rest
-            var $svg = jQuery(data).find('svg');
-
-            // Remove any invalid XML tags
-            $svg = $svg.removeAttr('xmlns:a');
-
-            // Loop through IMG attributes and apply on SVG
-            $.each(attributes, function() {
-                $svg.attr(this.name, this.value);
-            });
-
-            // Replace IMG with SVG
-            $img.replaceWith($svg);
-        }, 'xml');
-    });
-});

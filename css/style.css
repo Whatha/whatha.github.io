@@ -126,13 +126,14 @@ section{
   padding: 20px;
 }
 .skills button img{
-	-webkit-filter: blur(3px);
-	filter: blur(3px);
-	-webkit-filter: grayscale(100%);
+
+
+	-webkit-filter: blur(5px);
+	filter: blur(5px);
+		-webkit-filter: grayscale(100%);
 	filter: grayscale(100%);
   width: 200px;
-  	-webkit-animation: shine .75s;
-	animation: shine .75s;
+
 }
 
 .skills button img:hover{
@@ -168,3 +169,28 @@ section{
 #contactMessage{
 	height: 100px;
 }
+
+#loader-wrapper .loader-section {
+    position: fixed;
+    top: 0;
+    width: 51%;
+    height: 100%;
+    background: #222222;
+    z-index: 1000;
+}
+ 
+#loader-wrapper .loader-section.section-left {
+    left: 0;
+}
+ 
+#loader-wrapper .loader-section.section-right {
+    right: 0;
+}
+
+#loader {
+    z-index: 1001; /* anything higher than z-index: 1000 of .loader-section */
+}
+h1 {
+    color: #EEEEEE;
+}
+

@@ -31,13 +31,22 @@ ul#nav li:hover{
 	animation: bounce 0.5s;
 }
 
-#portfolio h1{
+#portfolio h2{
 	   font-family: 'Roboto', sans-serif;
    font-weight: 700; 
-      color: #652CB5;
-      text-align: left;
-      font-size: 30px;
+      color: white;
+      font-size: 40px;
       margin-left: 20px;
+      text-shadow: 2px 2px 4px #3D1666;
+}
+#portfolio p{
+	   font-family: 'Roboto', sans-serif;
+   font-weight: 300; 
+      color: white;
+      font-size: 20px;
+      margin:60px;
+      margin-top: 10px;
+      margin-bottom: 25px;
 }
 
 .contact-details{
@@ -54,8 +63,24 @@ ul#nav li:hover{
 	  font-family: 'Roboto', sans-serif;
    font-weight: 300; 
 }
+
+.section .title .btn-primary {
+  background: #652CB5;
+}
+.section .title .btn-primary:hover {
+  background: #3D1666;
+}
+.section .title {
+  background: #4BDB7D;
+}
 .social li:hover{
 		animation: bounce 1s;
+}
+.social-links li a{
+	color: #4BDB7D;
+}
+.social-links li:hover{
+			animation: bounce 1s;
 }
 section{
 		   font-family: 'Roboto', sans-serif;
@@ -128,16 +153,11 @@ section{
   font-weight: bold;
   padding: 0;
   padding: 20px;
-	animation: out .5s;
-	-webkit-filter: blur(5px);
-	filter: blur(5px);	
 
 }
 
 .skills button:hover{
-	animation: in .5s;
-	-webkit-filter: blur(0);
-	filter: blur(0);	
+	cursor: auto;
 }
 
 .skills button img{
@@ -145,7 +165,8 @@ section{
 	filter: grayscale(100%);
 
 	animation: outDos .5s;
-  width: 200px;
+  width: 150px;
+  padding: 10px;
 
 }
 
@@ -246,4 +267,18 @@ padding:0;
 }
 .popup-modal img{
 	margin-bottom: -15px;
+}
+
+#go-top a{
+	background-color: #4BDB7D;
+}
+#go-top a:hover{
+		background-color: #652CB5;
+
+}
+
+.video{
+	background-color: transparent;
+	padding: 5px;
+	margin:0 auto;
 }

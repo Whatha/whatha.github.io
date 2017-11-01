@@ -58,9 +58,9 @@ $(document).ready(function(){
       });
    });
 
-   $('.btn-primary').click(function(){
+ /*  $('.btn-primary').click(function(){
       alert('NO HAY MÁS INFORMACIÓN');
-   });
+   });*/
 });
 /*
 $(function() {

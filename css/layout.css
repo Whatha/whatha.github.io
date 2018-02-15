@@ -864,8 +864,8 @@ call-to-action .button {
    margin-left: 26%;
 }
 #contact button.submit:hover {
-	color: #0D0D0D;
-	background: #fff;
+	color: #fff;
+	background: #4BDB7D;
 }
 #contact span.required {
 	color: #11ABB0;

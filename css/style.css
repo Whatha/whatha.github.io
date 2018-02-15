@@ -93,6 +93,22 @@ section{
 #skills{
 	padding-top: 100px;
 }
+
+#skills h2{
+	font-size: 50px;
+	  font-family: 'Roboto', sans-serif;
+   font-weight: 700; 
+   color:#652CB5;
+}
+#skills h3{
+	font-size: 25px;
+	  font-family: 'Roboto', sans-serif;
+   font-weight: 300; 
+   color:#F2F2F2;
+   letter-spacing: 6px;
+   
+}
+
 #about h2{
 	font-size: 50px;
 	  font-family: 'Roboto', sans-serif;
@@ -282,3 +298,33 @@ padding:0;
 	padding: 5px;
 	margin:0 auto;
 }
+
+.lead{
+	font-size: 25px;
+	  font-family: 'Roboto', sans-serif;
+   font-weight: 300; 
+   color:#F2F2F2;
+   letter-spacing: 3px;
+   
+}
+
+.widget h2{
+	font-size: 25px;
+	  font-family: 'Roboto', sans-serif;
+   font-weight: 700; 
+   color:#4BDB7D;
+}
+
+.requerido{
+	   color:#4BDB7D;
+}
+
+.submitear:hover{
+	background-color: black;
+}
+	
+@media all and (max-width: 760) {
+  .opaque {
+    box-shadow: 0px 1px 10px rgba(213,2,21,0);
+
+}}

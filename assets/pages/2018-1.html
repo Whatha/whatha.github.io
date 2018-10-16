@@ -1,0 +1,107 @@
+<div class="jumbotron ggg" style="background-image: url(assets/imagenes_estudiantes/2018-1.JPG);">
+  <link rel="stylesheet" href="src/people.css" />
+  <div class="fondo">
+    <div class="lenteja">
+      <ul>
+        <li class="miembro">
+          <img ng-mouseover="hoverIn($event)" ng-mouseleave="hoverOut($event)" src="assets/imagenes_estudiantes/emma.png" nombre="Emanuel Bolaños" carrera="Ingeniería Industrial" universidad="ICESI" hobbies="Viajar y los deportes">
+          <div class="hero-info">
+            <p>Emma</p>
+          </div>
+        </li>
+        <li class="miembro">
+          <img ng-mouseover="hoverIn($event)" ng-mouseleave="hoverOut($event)" src="assets/imagenes_estudiantes/jocc.png" nombre="José Pineda Pitre" carrera="Diseño de Medios Interactivos" universidad="ICESI" hobbies="Cocinar e ir al teatro">
+          <div class="hero-info">
+            <p>Jocc</p>
+          </div>
+        </li>
+        <li class="miembro">
+          <img ng-mouseover="hoverIn($event)" ng-mouseleave="hoverOut($event)" src="assets/imagenes_estudiantes/tati.png" nombre="Tatiana Concha" carrera="Administración de negocios Internacionales" universidad="La Sabana" hobbies="Ver series y salir">
+          <div class="hero-info">
+            <p>Tati</p>
+          </div>
+        </li>
+        <li class="miembro">
+          <img ng-mouseover="hoverIn($event)" ng-mouseleave="hoverOut($event)" src="assets/imagenes_estudiantes/juanjo.png" nombre="Juan José Díaz" carrera="Ingeniería de diseño de producto" universidad="EAFIT" hobbies="Cocinar y pescar">
+          <div class="hero-info">
+            <p>Juanjo</p>
+          </div>
+        </li>
+        <li class="miembro">
+          <img ng-mouseover="hoverIn($event)" ng-mouseleave="hoverOut($event)" src="assets/imagenes_estudiantes/manuel.png" nombre="Manuel Franco" carrera="Diseño de Medios Interactivos" universidad="ICESI" hobbies="Videojuegos y ver películas">
+          <div class="hero-info">
+            <p>Franco</p>
+          </div>
+        </li>
+        <li class="miembro">
+          <img ng-mouseover="hoverIn($event)" ng-mouseleave="hoverOut($event)" src="assets/imagenes_estudiantes/nats.png" nombre="Natalia Vergara" carrera="Ingeniería de Diseño de producto" universidad="EAFIT" hobbies="Los animales e ir a cine">
+          <div class="hero-info">
+            <p>Nats</p>
+          </div>
+        </li>
+        <li class="miembro">
+          <img ng-mouseover="hoverIn($event)" ng-mouseleave="hoverOut($event)" src="assets/imagenes_estudiantes/deivid.png" nombre="David Suarez" carrera="Ingeniería Industrial" universidad="Los Andes" hobbies="Jugar Fútbol y Videojuegos">
+          <div class="hero-info">
+            <p>Deivid</p>
+          </div>
+        </li>
+        <li class="miembro">
+          <img ng-mouseover="hoverIn($event)" ng-mouseleave="hoverOut($event)" src="assets/imagenes_estudiantes/alejo.png" nombre="Alejandro González" carrera="Administración de empresas" universidad="Los Andes" hobbies="Motos y Buceo">
+          <div class="hero-info">
+            <p>Alejo</p>
+          </div>
+        </li>
+        <li class="miembro">
+          <img ng-mouseover="hoverIn($event)" ng-mouseleave="hoverOut($event)" src="assets/imagenes_estudiantes/angie.png" nombre="Angie Patarroyo" carrera="Ingeniería Industrial" universidad="La Sabana" hobbies="Jugar Tenis y Actividades extremas">
+          <div class="hero-info">
+            <p>Angie</p>
+          </div>
+        </li>
+        <li class="miembro">
+          <img ng-mouseover="hoverIn($event)" ng-mouseleave="hoverOut($event)" src="assets/imagenes_estudiantes/biv.png" nombre="Biviana Ruiz" carrera="Ingeniería Industrial" universidad="La Sabana" hobbies="Bailar y leer libros de magia">
+          <div class="hero-info">
+            <p>Bivi</p>
+          </div>
+        </li>
+        <li class="miembro">
+          <img ng-mouseover="hoverIn($event)" ng-mouseleave="hoverOut($event)" src="assets/imagenes_estudiantes/dani.png" nombre="Daniel Santiago Morales" carrera="Ingeniería Informática" universidad="La Sabana" hobbies="Ver memes e ir al gimnasio">
+          <div class="hero-info">
+            <p>El Santi</p>
+          </div>
+        </li>
+        <li class="miembro">
+          <img ng-mouseover="hoverIn($event)" ng-mouseleave="hoverOut($event)" src="assets/imagenes_estudiantes/cristian.png" nombre="Cristian Torres" carrera="Ingeniería Industrial" universidad="La Sabana" hobbies="Ver series y bailar">
+          <div class="hero-info">
+            <p>Cris</p>
+          </div>
+        </li>
+        <li class="miembro">
+          <img ng-mouseover="hoverIn($event)" ng-mouseleave="hoverOut($event)" src="assets/imagenes_estudiantes/cami.png" nombre="Camila Mercado" carrera="Ingeniería Industrial" universidad="Los Andes" hobbies="Ver series y salir a comer">
+          <div class="hero-info">
+            <p>Cami</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+
+
+    <div class="selected" id="selected">
+
+      <img class="imagen" ng-src="{{imagen}}" alt="">
+                  <div class="blanc"></div>
+
+      <div class="info">
+        <h3>Nombre</h3>
+        <h2>{{nombre}}</h2>
+        <h3>Carrera</h3>
+        <h2>{{carrera}}</h2>
+        <h3>Universidad</h3>
+        <h2>{{universidad}}</h2>
+        <h3>Hobbies</h3>
+        <h2>{{hobbies}}</h2>
+        <br>
+      </div>
+    </div>
+  </div>
+</div>

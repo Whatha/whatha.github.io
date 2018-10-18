@@ -5,7 +5,7 @@ $(document).on('ready', function() {
     });
 
 
-console.log("Test Station");
+console.log("Test Ssation");
 
 $(window).on('load', function(){
    // PAGE IS FULLY LOADED  

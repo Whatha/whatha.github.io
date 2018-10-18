@@ -4,6 +4,9 @@ $(document).on('ready', function() {
      console.log("READY SHIT");
     });
 
+
+console.log("Test Station");
+
 $(window).on('load', function(){
    // PAGE IS FULLY LOADED  
    // FADE OUT YOUR OVERLAYING DIV

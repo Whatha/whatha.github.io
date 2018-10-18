@@ -2,6 +2,8 @@
 
 *,
 .navbar {
+       font-family: 'Roboto', sans-serif;
+
   padding: 0;
   margin: 0;
 }
@@ -47,7 +49,6 @@
   /* Safari 4.0 - 8.0 */
   animation: moveit 2s forwards;
   animation-delay: 2s;
-  z-index: 1000;
   text-align: left;
 }
 .contenido h3{
@@ -70,8 +71,8 @@
   /* Safari 4.0 - 8.0 */
   -webkit-animation-delay: 2s;
   /* Safari 4.0 - 8.0 */
-  animation: mymove 2s forwards;
-  animation-delay: 2s;
+  animation: mymove 1s forwards;
+  animation-delay: 0;
 }
 
 .logo {
@@ -128,24 +129,23 @@
 
 
 .button_slide {
-
-  text-align: center;
-  color: #FFF;
-  border: 2px solid #fff;
-  border-radius: 6px;
-  padding: 10px;
-  margin-top: 50%;
-  opacity: 0;
-  width: 300px;
-  display: inline-block;
-  font-size: 14px;
-  letter-spacing: 1px;
-  cursor: pointer;
-  float: left;
-  box-shadow: inset 0 0 0 0 #0f363fAA;
-  -webkit-transition: ease-out 0.4s;
-  -moz-transition: ease-out 0.4s;
-  transition: ease-out 0.4s;
+    text-align: center;
+    color: #FFF;
+    border: 2px solid #fff;
+    border-radius: 6px;
+    padding: 25px;
+    margin-top: 50%;
+    opacity: 0;
+    width: 300px;
+    display: inline-block;
+    font-size: 20px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    float: left;
+    box-shadow: inset 0 0 0 0 #0f363fAA;
+    -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+    transition: ease-out 0.4s;
 }
 
 .slide_right:hover {
@@ -221,19 +221,16 @@
 .div-three {
   background: url('../assets/imagenes_estudiantes/carvafondo.jpg');
   width: 100vw;
-  height: 100vh;
-
-  width: 100vw;
-  height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
+  background-attachment: fixed;
 }
 
 .div-two {
   -webkit-clip-path: polygon(0 0, 25% 50%, 50% 100%, 0% 100%);
   clip-path: polygon(0 0, 25% 50%, 50% 100%, 0% 100%);
-  background: url('../assets/imagenes_estudiantes/6.jpg');
+  background: url('assets/imagenes_estudiantes/6.jpg');
   width: 100vw;
   height: 100vh;
   background-repeat: no-repeat;
@@ -532,6 +529,7 @@ video{
   transition: all 1s ease;
   transition-delay: 0s;
   font-size: 1.5vw;
+      line-height: 130%;
 }
 
 .kolon:hover p,
@@ -597,19 +595,20 @@ video{
   width: 100%;
   height: 100%;
   color: #fff;
-  background: rgba(161, 59, 203, .3);
+  background: rgba(59, 203, 66, .3);
   /* Green background with 30% opacity */
   transition: all .6s ease;
 }
 
 .kolon:hover .opac2 {
-  background: rgba(161, 59, 203, 0.7);
+  background: rgba(59, 203, 66, 0.7);
   /* Green background with 30% opacity */
 }
 
 .highlight {
-  font-size: 4vw;
-  transition: all 1s ease;
+    font-size: 3.5vw;
+    font-weight: 600;
+      transition: all 1s ease;
   color: white;
 
 }
@@ -645,10 +644,11 @@ video{
   background-color: #0E78C47F;
   width: 100%;
   height: 100%;
-  position: absolute;
   z-index: 1;
   transition: all .5s ease-in-out;
   color: white;
+      padding: 120px 20px;
+
 }
 
 .div a {
@@ -828,6 +828,13 @@ color: #4D6391;
   font-size: 40px;
 }
 
+.container-fluid {
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 
 @media (max-width: 1100px) {
   .contenido {
@@ -843,12 +850,36 @@ color: #4D6391;
     animation: moveit 2s forwards;
     animation-delay: 2s;
   }
+    .opaque{
+  background-color: #4BDB7D;
+   box-shadow: 0px 1px 10px rgba(101,44,181,15);
+}
+  ul#nav li {
+
+/* 8px padding top + 8px padding bottom + 32px line-height = 48px */
+     border-bottom: 0; 
+
+}
+
+#nav-wrap ul#nav {
+    /* height: auto; */
+     display: block; 
+    clear: both;
+    width: auto;
+    float: right;
+    position: relative;
+   top: 0; 
+    right: 0;
+}
+.kolon{
+  background-size: cover !important;
+}
   .contenido h3 {
     font-size: 13px;
   }
   .button_slide {
 
-    padding: 5px;
+    padding: 20px;
     margin-top: 50%;
     width: 180px;
   }
@@ -870,6 +901,8 @@ color: #4D6391;
     border-top: 1px solid transparent;
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
   }
+
+
   .navbar-fixed-top {
     top: 0;
     border-width: 0 0 1px;
@@ -890,7 +923,19 @@ color: #4D6391;
   }
   .collapse.in {
     display: block !important;
-    background-color: #545454;
+ background-color: #4BDB7D;
+   
+  }
+
+  .container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
+    margin-right: 0;
+    margin-left: 0;
+    height: 60px;
+}
+
+  .container-fluid>.navbar-collapse{
+            height: auto;
+transition: all 0.5s;
   }
 
   .directivo {
@@ -948,10 +993,21 @@ color: #4D6391;
 
 }
 .coso {
-  padding: 10px;
-  padding-top: 300px;
+    padding: 10px;
+    padding-top: 50px;
+    height: 320px;
 }
 
+.ızgara {
+    display: -webkit-block; 
+     display: block; 
+     height: auto; 
+    background: #788B8DFF;
+}
+
+.kolon{
+  width: 100vw;
+}
 .kolon p, .kolon li{
       font-size: 14px;
 
@@ -966,7 +1022,7 @@ color: #4D6391;
   width: 100%;
   height: auto;
       margin-left: 0;
-    margin-top: 250px;
+    margin-top: 50px;
 }
 
 
@@ -1012,3 +1068,191 @@ color: #4D6391;
 }
 
 
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+.column {
+    width: 100%;
+    display: inline-block;
+    margin-top: 20px;
+}
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(37, 37, 37, 0.8);
+    transition: all .5s ease-in-out;
+
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+
+.div-three .row {
+    width: 96%;
+    max-width: 1020px;
+    margin: 0 auto;
+}
+
+.jumbotron .container {
+    max-width: 100%;
+    background: white;
+        padding: 12px;
+}
+
+.jumbotron{
+              line-height: 0;
+
+}
+
+.card:hover{
+    transform: scale3d(1.05, 1.05, 1);
+
+}
+
+.opc h1{
+  text-align: center;
+}
+
+
+.color-list {
+  display: flex;
+  /* 
+    On small displays we want each .color stacked.
+    Flexbox let's us determine stacking direction via
+    flex-direction: column;
+  */
+  flex-direction: column;
+  height: auto;
+}
+
+.color {
+  /*
+    Each .color is also a flex item. We do this so that we have reasonable
+    distribution of space between elements. We use flex-direction so that
+    flexbox knows which way to position each element (in this case, vertical).
+  */
+  display: flex;
+  flex-direction: column;
+  
+  /*
+    .color can grow but not shrink (we want space for first three elements).
+    10em is enough space to see name, hsl, and hex values. 
+    Try shrinking vertically on a small display.
+  */
+  flex: 1 0 10em;  
+  box-shadow: 0 0 30px #424242;
+  
+  /* Handles any clipping/overflow issues on transition */
+  overflow: hidden;
+  padding: 1em;
+  color: white;
+  position: relative;
+  transition: flex-basis 500ms ease-in-out;
+    height: 350px;
+
+}
+
+.color:hover {
+  /*
+    Change the flex-basis so that we know what
+    size to transition to on hover. Arbitrary,
+    based on our design/content.
+  */
+  flex-basis: 20em;
+}
+
+.color:hover .details {
+  opacity: 1;
+}
+
+.name {
+  font-size: 1.2em;
+  font-weight: 600;
+  color: white;
+}
+
+.details {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  opacity: 0;
+  position: absolute;
+  bottom: 0;
+  transition: opacity 500ms ease-in-out;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.details li {
+  font-size: 1em;
+  line-height: 2em;
+}
+
+@media (min-width: 600px) {
+  .color-list {
+    /*
+      Change the direction so that each .color
+      aligns horizontally
+    */
+    flex-direction: row;
+  }
+  
+  .color {
+    /*
+      No scrollbars on mobile
+    */
+    flex-shrink: 1;
+  }
+}
+
+/* Fonts, OK at the end for this demo! */
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600);
+
+.color img{
+  width: 100%;
+}
+
+.panel-body{
+  padding:0;
+}
+
+.panel-group {
+     margin-bottom: 0;
+}
+
+.panel-group .panel {
+    margin: 0;
+    border-radius: 0;
+    border: 0;
+    overflow: auto;
+}
+
+.panel-group .panel+.panel {
+    margin-top: 0;
+}
+
+.botones{
+  width: 100%;
+}
+
+.botones button {
+    width: 49%;
+    font-size: 22px;
+    background: #4cda7d;
+    border-color: transparent;
+}
